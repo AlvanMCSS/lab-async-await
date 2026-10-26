@@ -1,4 +1,3 @@
-// Write your code here!
 
 async function getPosts() {
     const postList = document.querySelector("#post-list");
@@ -19,9 +18,11 @@ async function getPosts() {
         posts.forEach(function(post) {
             const li = document.createElement("li");
 
-            const title = document.createElement("h3");
+            // Create an h1 for the post title
+            const title = document.createElement("h1");
             title.textContent = post.title;
 
+            // Create a p for the post body
             const body = document.createElement("p");
             body.textContent = post.body;
 
